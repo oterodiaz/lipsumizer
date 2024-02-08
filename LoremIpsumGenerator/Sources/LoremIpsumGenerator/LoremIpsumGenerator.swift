@@ -53,7 +53,7 @@ public struct LoremIpsumGenerator {
 
     public func generateText(
         length: TextLength = .paragraph(3),
-        firstWordPair: WordPair? = WordPair("Lorem", "ipsum")
+        firstWordPair: WordPair? = nil
     ) async -> String {
         
         switch length {
