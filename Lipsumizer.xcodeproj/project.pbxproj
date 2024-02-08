@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1D02A9A2B74F7C200D6C61D /* LipsumizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */; };
+		F1D02A9C2B74F7C200D6C61D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02A9B2B74F7C200D6C61D /* ContentView.swift */; };
+		F1D02A9E2B74F7C200D6C61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D02A9D2B74F7C200D6C61D /* Assets.xcassets */; };
+		F1D02AA22B74F7C200D6C61D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D02AA12B74F7C200D6C61D /* Preview Assets.xcassets */; };
+		F1D02AAC2B74F7C300D6C61D /* LipsumizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AAB2B74F7C300D6C61D /* LipsumizerTests.swift */; };
+		F1D02AB62B74F7C300D6C61D /* LipsumizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AB52B74F7C300D6C61D /* LipsumizerUITests.swift */; };
+		F1D02AB82B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AB72B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1D02AA82B74F7C300D6C61D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D02A8E2B74F7C200D6C61D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D02A952B74F7C200D6C61D;
+			remoteInfo = Lipsumizer;
+		};
+		F1D02AB22B74F7C300D6C61D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D02A8E2B74F7C200D6C61D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D02A952B74F7C200D6C61D;
+			remoteInfo = Lipsumizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1D02A962B74F7C200D6C61D /* Lipsumizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lipsumizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsumizerApp.swift; sourceTree = "<group>"; };
+		F1D02A9B2B74F7C200D6C61D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1D02A9D2B74F7C200D6C61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1D02A9F2B74F7C200D6C61D /* Lipsumizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lipsumizer.entitlements; sourceTree = "<group>"; };
+		F1D02AA12B74F7C200D6C61D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1D02AA72B74F7C300D6C61D /* LipsumizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LipsumizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D02AAB2B74F7C300D6C61D /* LipsumizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsumizerTests.swift; sourceTree = "<group>"; };
+		F1D02AB12B74F7C300D6C61D /* LipsumizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LipsumizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D02AB52B74F7C300D6C61D /* LipsumizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsumizerUITests.swift; sourceTree = "<group>"; };
+		F1D02AB72B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsumizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1D02A932B74F7C200D6C61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AA42B74F7C300D6C61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AAE2B74F7C300D6C61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1D02A8D2B74F7C200D6C61D = {
+			isa = PBXGroup;
+			children = (
+				F1D02A982B74F7C200D6C61D /* Lipsumizer */,
+				F1D02AAA2B74F7C300D6C61D /* LipsumizerTests */,
+				F1D02AB42B74F7C300D6C61D /* LipsumizerUITests */,
+				F1D02A972B74F7C200D6C61D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1D02A972B74F7C200D6C61D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1D02A962B74F7C200D6C61D /* Lipsumizer.app */,
+				F1D02AA72B74F7C300D6C61D /* LipsumizerTests.xctest */,
+				F1D02AB12B74F7C300D6C61D /* LipsumizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1D02A982B74F7C200D6C61D /* Lipsumizer */ = {
+			isa = PBXGroup;
+			children = (
+				F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */,
+				F1D02A9B2B74F7C200D6C61D /* ContentView.swift */,
+				F1D02A9D2B74F7C200D6C61D /* Assets.xcassets */,
+				F1D02A9F2B74F7C200D6C61D /* Lipsumizer.entitlements */,
+				F1D02AA02B74F7C200D6C61D /* Preview Content */,
+			);
+			path = Lipsumizer;
+			sourceTree = "<group>";
+		};
+		F1D02AA02B74F7C200D6C61D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1D02AA12B74F7C200D6C61D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1D02AAA2B74F7C300D6C61D /* LipsumizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D02AAB2B74F7C300D6C61D /* LipsumizerTests.swift */,
+			);
+			path = LipsumizerTests;
+			sourceTree = "<group>";
+		};
+		F1D02AB42B74F7C300D6C61D /* LipsumizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D02AB52B74F7C300D6C61D /* LipsumizerUITests.swift */,
+				F1D02AB72B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift */,
+			);
+			path = LipsumizerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1D02A952B74F7C200D6C61D /* Lipsumizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D02ABB2B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "Lipsumizer" */;
+			buildPhases = (
+				F1D02A922B74F7C200D6C61D /* Sources */,
+				F1D02A932B74F7C200D6C61D /* Frameworks */,
+				F1D02A942B74F7C200D6C61D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lipsumizer;
+			productName = Lipsumizer;
+			productReference = F1D02A962B74F7C200D6C61D /* Lipsumizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1D02AA62B74F7C300D6C61D /* LipsumizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D02ABE2B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "LipsumizerTests" */;
+			buildPhases = (
+				F1D02AA32B74F7C300D6C61D /* Sources */,
+				F1D02AA42B74F7C300D6C61D /* Frameworks */,
+				F1D02AA52B74F7C300D6C61D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D02AA92B74F7C300D6C61D /* PBXTargetDependency */,
+			);
+			name = LipsumizerTests;
+			productName = LipsumizerTests;
+			productReference = F1D02AA72B74F7C300D6C61D /* LipsumizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1D02AB02B74F7C300D6C61D /* LipsumizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D02AC12B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "LipsumizerUITests" */;
+			buildPhases = (
+				F1D02AAD2B74F7C300D6C61D /* Sources */,
+				F1D02AAE2B74F7C300D6C61D /* Frameworks */,
+				F1D02AAF2B74F7C300D6C61D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D02AB32B74F7C300D6C61D /* PBXTargetDependency */,
+			);
+			name = LipsumizerUITests;
+			productName = LipsumizerUITests;
+			productReference = F1D02AB12B74F7C300D6C61D /* LipsumizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1D02A8E2B74F7C200D6C61D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F1D02A952B74F7C200D6C61D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F1D02AA62B74F7C300D6C61D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F1D02A952B74F7C200D6C61D;
+					};
+					F1D02AB02B74F7C300D6C61D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F1D02A952B74F7C200D6C61D;
+					};
+				};
+			};
+			buildConfigurationList = F1D02A912B74F7C200D6C61D /* Build configuration list for PBXProject "Lipsumizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1D02A8D2B74F7C200D6C61D;
+			productRefGroup = F1D02A972B74F7C200D6C61D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1D02A952B74F7C200D6C61D /* Lipsumizer */,
+				F1D02AA62B74F7C300D6C61D /* LipsumizerTests */,
+				F1D02AB02B74F7C300D6C61D /* LipsumizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1D02A942B74F7C200D6C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D02AA22B74F7C200D6C61D /* Preview Assets.xcassets in Resources */,
+				F1D02A9E2B74F7C200D6C61D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AA52B74F7C300D6C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AAF2B74F7C300D6C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1D02A922B74F7C200D6C61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D02A9C2B74F7C200D6C61D /* ContentView.swift in Sources */,
+				F1D02A9A2B74F7C200D6C61D /* LipsumizerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AA32B74F7C300D6C61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D02AAC2B74F7C300D6C61D /* LipsumizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D02AAD2B74F7C300D6C61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D02AB82B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift in Sources */,
+				F1D02AB62B74F7C300D6C61D /* LipsumizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1D02AA92B74F7C300D6C61D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D02A952B74F7C200D6C61D /* Lipsumizer */;
+			targetProxy = F1D02AA82B74F7C300D6C61D /* PBXContainerItemProxy */;
+		};
+		F1D02AB32B74F7C300D6C61D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D02A952B74F7C200D6C61D /* Lipsumizer */;
+			targetProxy = F1D02AB22B74F7C300D6C61D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1D02AB92B74F7C300D6C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1D02ABA2B74F7C300D6C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F1D02ABC2B74F7C300D6C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lipsumizer/Lipsumizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lipsumizer/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.Lipsumizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1D02ABD2B74F7C300D6C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lipsumizer/Lipsumizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lipsumizer/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.Lipsumizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1D02ABF2B74F7C300D6C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.LipsumizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lipsumizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lipsumizer";
+			};
+			name = Debug;
+		};
+		F1D02AC02B74F7C300D6C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.LipsumizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lipsumizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lipsumizer";
+			};
+			name = Release;
+		};
+		F1D02AC22B74F7C300D6C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.LipsumizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lipsumizer;
+			};
+			name = Debug;
+		};
+		F1D02AC32B74F7C300D6C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V6GTQWZBT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oterodiaz.LipsumizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lipsumizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1D02A912B74F7C200D6C61D /* Build configuration list for PBXProject "Lipsumizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D02AB92B74F7C300D6C61D /* Debug */,
+				F1D02ABA2B74F7C300D6C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D02ABB2B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "Lipsumizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D02ABC2B74F7C300D6C61D /* Debug */,
+				F1D02ABD2B74F7C300D6C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D02ABE2B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "LipsumizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D02ABF2B74F7C300D6C61D /* Debug */,
+				F1D02AC02B74F7C300D6C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D02AC12B74F7C300D6C61D /* Build configuration list for PBXNativeTarget "LipsumizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D02AC22B74F7C300D6C61D /* Debug */,
+				F1D02AC32B74F7C300D6C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1D02A8E2B74F7C200D6C61D /* Project object */;
+}
