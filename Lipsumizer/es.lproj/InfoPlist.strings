@@ -1,0 +1,5 @@
+/* Bundle name */
+"CFBundleName" = "Lipsumizer";
+
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "Copyright © 2024 Diego Otero Díaz.\nTodos los derechos reservados.";

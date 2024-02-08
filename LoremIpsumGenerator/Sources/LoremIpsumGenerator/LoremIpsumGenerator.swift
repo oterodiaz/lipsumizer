@@ -18,8 +18,12 @@ public struct LoremIpsumGenerator {
     /// **Note:** The words are stored in an array instead of a set (sets don't allow repeats)  in order to account for how common
     /// a certain sequence of words is in the original text.
     private var wordsMarkovChain: [WordPair: [Word]] = [:]
+    
+    public var isUsingCustomText: Bool
 
     public init() {
+        self.isUsingCustomText = false
+        
         let loremIpsumURL  = Bundle.module.url(forResource: "lorem-ipsum",  withExtension: "txt")!
         let liberPrimusURL = Bundle.module.url(forResource: "liber-primus", withExtension: "txt")!
         
@@ -31,10 +35,12 @@ public struct LoremIpsumGenerator {
     }
     
     public init(fromCustomText text: String) {
+        self.isUsingCustomText = true
         populateMarkovChain(from: text)
     }
     
     public init(fromCustomTexts texts: [String]) {
+        self.isUsingCustomText = true
         texts.forEach { populateMarkovChain(from: $0) }
     }
 
@@ -55,6 +61,8 @@ public struct LoremIpsumGenerator {
         length: TextLength = .paragraph(3),
         firstWordPair: WordPair? = nil
     ) async -> String {
+        
+        guard !wordsMarkovChain.isEmpty else { return "" }
         
         switch length {
         case .word(let count):

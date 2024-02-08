@@ -5,7 +5,7 @@ final class LoremIpsumGeneratorTests: XCTestCase {
     func testLoremIpsumGenerator() async throws {
         let generator = LoremIpsumGenerator()
         
-        let textA = await generator.generateText(length: .word(150))
+        let textA = await generator.generateText(length: .word(150), firstWordPair: .init("Lorem", "ipsum"))
         let textB = await generator.generateText(length: .paragraph(500))
         let textC = await generator.generateText(length: .word(-5))
         let textD = await generator.generateText(length: .paragraph(0))
@@ -47,5 +47,9 @@ final class LoremIpsumGeneratorTests: XCTestCase {
         XCTAssertEqual(textC, "")
         XCTAssertEqual(textD, "")
         XCTAssertEqual(textE, "El tráfico ferroviario en.")
+        
+        let generator2 = LoremIpsumGenerator(fromCustomText: "")
+        let text1 = await generator2.generateText(length: .word(150))
+        XCTAssertEqual(text1, "")
     }
 }
