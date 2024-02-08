@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F1D02AAC2B74F7C300D6C61D /* LipsumizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AAB2B74F7C300D6C61D /* LipsumizerTests.swift */; };
 		F1D02AB62B74F7C300D6C61D /* LipsumizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AB52B74F7C300D6C61D /* LipsumizerUITests.swift */; };
 		F1D02AB82B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D02AB72B74F7C300D6C61D /* LipsumizerUITestsLaunchTests.swift */; };
+		F1D02AC72B74FEB700D6C61D /* LoremIpsumGenerator in Frameworks */ = {isa = PBXBuildFile; productRef = F1D02AC62B74FEB700D6C61D /* LoremIpsumGenerator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D02AC72B74FEB700D6C61D /* LoremIpsumGenerator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = Lipsumizer;
+			packageProductDependencies = (
+				F1D02AC62B74FEB700D6C61D /* LoremIpsumGenerator */,
+			);
 			productName = Lipsumizer;
 			productReference = F1D02A962B74F7C200D6C61D /* Lipsumizer.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = F1D02A8D2B74F7C200D6C61D;
+			packageReferences = (
+				F1D02AC52B74FEB700D6C61D /* XCLocalSwiftPackageReference "LoremIpsumGenerator" */,
+			);
 			productRefGroup = F1D02A972B74F7C200D6C61D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -625,6 +633,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F1D02AC52B74FEB700D6C61D /* XCLocalSwiftPackageReference "LoremIpsumGenerator" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LoremIpsumGenerator;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1D02AC62B74FEB700D6C61D /* LoremIpsumGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoremIpsumGenerator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1D02A8E2B74F7C200D6C61D /* Project object */;
 }
