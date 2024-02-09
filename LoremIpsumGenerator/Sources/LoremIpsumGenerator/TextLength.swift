@@ -17,8 +17,7 @@ public struct TextLength: Equatable {
         self.unit = unit
     }
     
-    public enum LengthUnit {
-        case word
-        case paragraph
+    public enum LengthUnit: CaseIterable {
+        case word, paragraph
     }
 }

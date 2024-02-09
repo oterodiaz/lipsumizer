@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F13515222B764EEB007358FC /* +TextLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13515212B764EEB007358FC /* +TextLength.swift */; };
 		F13515242B765119007358FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F13515232B765119007358FC /* Localizable.xcstrings */; };
+		F13515262B76776F007358FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13515252B76776F007358FC /* ContentView.swift */; };
+		F135152B2B767BAA007358FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135152A2B767BAA007358FC /* SettingsView.swift */; };
+		F135152D2B768655007358FC /* +TextLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135152C2B768655007358FC /* +TextLength.swift */; };
 		F13C388B2B756AC800959BC1 /* TextGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */; };
 		F13C388E2B75735500959BC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F13C38902B75735500959BC1 /* InfoPlist.strings */; };
 		F16C25832B75523500E9F8B1 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = F16C25822B75523500E9F8B1 /* SwiftUIIntrospect */; };
@@ -40,8 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F13515212B764EEB007358FC /* +TextLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+TextLength.swift"; sourceTree = "<group>"; };
 		F13515232B765119007358FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F13515252B76776F007358FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F135152A2B767BAA007358FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F135152C2B768655007358FC /* +TextLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+TextLength.swift"; sourceTree = "<group>"; };
 		F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGeneratorViewModel.swift; sourceTree = "<group>"; };
 		F13C388F2B75735500959BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F13C38912B75735900959BC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -86,6 +90,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13515272B767AB8007358FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F13515252B76776F007358FC /* ContentView.swift */,
+				F1D02A9B2B74F7C200D6C61D /* TextGenerator.swift */,
+				F135152A2B767BAA007358FC /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F13515282B767AC7007358FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F135152C2B768655007358FC /* +TextLength.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F13515292B767AD1007358FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F1D02A8D2B74F7C200D6C61D = {
 			isa = PBXGroup;
 			children = (
@@ -111,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */,
-				F1D02A9B2B74F7C200D6C61D /* TextGenerator.swift */,
-				F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */,
-				F13515212B764EEB007358FC /* +TextLength.swift */,
+				F13515272B767AB8007358FC /* Views */,
+				F13515292B767AD1007358FC /* ViewModels */,
+				F13515282B767AC7007358FC /* Extensions */,
 				F1D02A9D2B74F7C200D6C61D /* Assets.xcassets */,
 				F1D02A9F2B74F7C200D6C61D /* Lipsumizer.entitlements */,
 				F13515232B765119007358FC /* Localizable.xcstrings */,
@@ -289,9 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F135152B2B767BAA007358FC /* SettingsView.swift in Sources */,
 				F13C388B2B756AC800959BC1 /* TextGeneratorViewModel.swift in Sources */,
+				F13515262B76776F007358FC /* ContentView.swift in Sources */,
 				F1D02A9C2B74F7C200D6C61D /* TextGenerator.swift in Sources */,
-				F13515222B764EEB007358FC /* +TextLength.swift in Sources */,
+				F135152D2B768655007358FC /* +TextLength.swift in Sources */,
 				F1D02A9A2B74F7C200D6C61D /* LipsumizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

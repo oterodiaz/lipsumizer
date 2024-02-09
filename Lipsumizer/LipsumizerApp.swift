@@ -11,9 +11,15 @@ import SwiftUI
 struct LipsumizerApp: App {
     var body: some Scene {
         WindowGroup {
-            TextGenerator()
+            ContentView()
                 .frame(idealWidth: 512, minHeight: 256, idealHeight: 512)
         }
         .windowResizability(.contentSize)
+        
+#if os(macOS)
+        Settings {
+            SettingsView()
+        }
+#endif
     }
 }

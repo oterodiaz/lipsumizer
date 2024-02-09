@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%lld Paragraphs" : {
       "localizations" : {
         "en" : {
@@ -81,7 +84,31 @@
         }
       }
     },
-    "Regenerate" : {
+    "Copy text" : {
+
+    },
+    "Decrease text length" : {
+
+    },
+    "Generate new text" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Increase text length" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Text Generator" : {
+
+    },
+    "Text length" : {
+
+    },
+    "Toggle text length unit" : {
 
     }
   },
