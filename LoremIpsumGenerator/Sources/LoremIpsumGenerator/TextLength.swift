@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct TextLength {
+public struct TextLength: Equatable {
     
     public var count: Int
     public var unit: LengthUnit
