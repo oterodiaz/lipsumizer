@@ -58,27 +58,27 @@ public struct LoremIpsumGenerator {
     }
 
     public func generateText(
-        length: TextLength = .paragraph(3),
+        length: TextLength = .init(unit: .paragraph, count: 3),
         firstWordPair: WordPair? = nil
     ) async -> String {
         
         guard !wordsMarkovChain.isEmpty else { return "" }
         
-        switch length {
-        case .word(let count):
-            return generateSentence(wordCount: count, firstWordPair: firstWordPair)
-        case .paragraph(let count):
-            guard count > 0 else { return "" }
+        switch length.unit {
+        case .word:
+            return generateSentence(wordCount: length.count, firstWordPair: firstWordPair)
+        case .paragraph:
+            guard length.count > 0 else { return "" }
             
             let firstParagraph = generateSentence(
                 wordCount: .random(in: 30...70),
                 firstWordPair: firstWordPair
             )
             
-            guard count > 1 else { return firstParagraph}
+            guard length.count > 1 else { return firstParagraph}
             
             let paragraphs = await withTaskGroup(of: String.self) { group -> [String] in
-                for _ in 0..<(count - 1) {
+                for _ in 0..<(length.count - 1) {
                     group.addTask { generateSentence(wordCount: .random(in: 30...70)) }
                 }
                 

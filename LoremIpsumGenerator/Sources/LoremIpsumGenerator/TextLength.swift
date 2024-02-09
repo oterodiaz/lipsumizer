@@ -7,7 +7,18 @@
 
 import Foundation
 
-public enum TextLength {
-    case word(_ count: Int)
-    case paragraph(_ count: Int)
+public struct TextLength {
+    
+    public var count: Int
+    public var unit: LengthUnit
+    
+    public init(unit: LengthUnit, count: Int) {
+        self.count = count
+        self.unit = unit
+    }
+    
+    public enum LengthUnit {
+        case word
+        case paragraph
+    }
 }
