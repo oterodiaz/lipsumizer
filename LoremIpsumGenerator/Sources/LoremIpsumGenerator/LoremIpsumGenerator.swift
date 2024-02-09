@@ -45,7 +45,8 @@ public struct LoremIpsumGenerator {
     }
 
     private mutating func populateMarkovChain(from text: String) {
-        let words = text.words
+        // Filter out "words" that don't contain alphanumeric characters, such as "--"
+        let words = text.words.filter { $0.rangeOfCharacter(from: .alphanumerics) != nil }
 
         guard words.count >= 3 else { return }
 
