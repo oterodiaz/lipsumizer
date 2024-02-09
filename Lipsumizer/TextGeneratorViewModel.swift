@@ -39,8 +39,6 @@ class TextGeneratorViewModel {
                 length: textLength,
                 firstWordPair: canBeginWithLoremIpsum ? .init("Lorem", "ipsum") : nil
             )
-            
-            print(output)
         }
     }
 }

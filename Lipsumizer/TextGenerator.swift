@@ -38,7 +38,7 @@ struct TextGenerator: View {
                     }
 #endif
             }
-            .navigationTitle("Test")
+            .navigationTitle(viewModel.textLength.localizedDescription)
             .onAppear { viewModel.runGenerator() }
             .toolbar {
                 ToolbarItem {

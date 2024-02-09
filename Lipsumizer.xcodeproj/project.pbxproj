@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13515222B764EEB007358FC /* +TextLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13515212B764EEB007358FC /* +TextLength.swift */; };
+		F13515242B765119007358FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F13515232B765119007358FC /* Localizable.xcstrings */; };
 		F13C388B2B756AC800959BC1 /* TextGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */; };
 		F13C388E2B75735500959BC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F13C38902B75735500959BC1 /* InfoPlist.strings */; };
 		F16C25832B75523500E9F8B1 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = F16C25822B75523500E9F8B1 /* SwiftUIIntrospect */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F13515212B764EEB007358FC /* +TextLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+TextLength.swift"; sourceTree = "<group>"; };
+		F13515232B765119007358FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGeneratorViewModel.swift; sourceTree = "<group>"; };
 		F13C388F2B75735500959BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F13C38912B75735900959BC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -109,8 +113,10 @@
 				F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */,
 				F1D02A9B2B74F7C200D6C61D /* TextGenerator.swift */,
 				F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */,
+				F13515212B764EEB007358FC /* +TextLength.swift */,
 				F1D02A9D2B74F7C200D6C61D /* Assets.xcassets */,
 				F1D02A9F2B74F7C200D6C61D /* Lipsumizer.entitlements */,
+				F13515232B765119007358FC /* Localizable.xcstrings */,
 				F13C38902B75735500959BC1 /* InfoPlist.strings */,
 				F1D02AA02B74F7C200D6C61D /* Preview Content */,
 			);
@@ -257,6 +263,7 @@
 			files = (
 				F1D02AA22B74F7C200D6C61D /* Preview Assets.xcassets in Resources */,
 				F13C388E2B75735500959BC1 /* InfoPlist.strings in Resources */,
+				F13515242B765119007358FC /* Localizable.xcstrings in Resources */,
 				F1D02A9E2B74F7C200D6C61D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 			files = (
 				F13C388B2B756AC800959BC1 /* TextGeneratorViewModel.swift in Sources */,
 				F1D02A9C2B74F7C200D6C61D /* TextGenerator.swift in Sources */,
+				F13515222B764EEB007358FC /* +TextLength.swift in Sources */,
 				F1D02A9A2B74F7C200D6C61D /* LipsumizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
