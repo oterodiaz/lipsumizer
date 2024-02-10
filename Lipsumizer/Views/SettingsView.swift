@@ -81,9 +81,6 @@ struct SettingsView: View {
                             .labelsHidden()
                     }
                 }
-#if os(visionOS)
-                resetButton
-#endif
             }
             
             .formStyle(.grouped)
@@ -115,6 +112,12 @@ struct SettingsView: View {
                     }
                 }
                 .padding()
+            }
+#elseif os(visionOS)
+            .toolbar {
+                ToolbarItem {
+                    resetButton
+                }
             }
 #endif
         }
