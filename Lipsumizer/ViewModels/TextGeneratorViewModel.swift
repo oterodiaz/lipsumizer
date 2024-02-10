@@ -24,8 +24,8 @@ class TextGeneratorViewModel {
     init(
         generator: LoremIpsumGenerator = LoremIpsumGenerator(),
         output: String = "",
-        textLength: TextLength = .init(unit: .paragraph, count: 3),
-        beginWithLoremIpsum: Bool = true
+        textLength: TextLength = .init(unit: defaultTextLengthUnit(), count: defaultTextLength()),
+        beginWithLoremIpsum: Bool = UserDefaults.standard.bool(forKey: UserDefaultsKey.beginWithLoremIpsum.string)
     ) {
         self.generator = generator
         self.output = output
@@ -42,12 +42,16 @@ class TextGeneratorViewModel {
         }
     }
     
+    func setTextLengthCount(_ newValue: Int) {
+        textLength.count = textLength.unit == .word ? min(10_000, max(1, newValue)) : min(1_000, max(1, newValue))
+    }
+    
     func decreaseTextLength() {
-        textLength.count = max(1, textLength.count - 1)
+        setTextLengthCount(textLength.count - 1)
     }
     
     func increaseTextLength() {
-        textLength.count = max(1, textLength.count + 1)
+        setTextLengthCount(textLength.count + 1)
     }
     
     func toggleLengthUnit() {
@@ -62,5 +66,17 @@ class TextGeneratorViewModel {
     
     var navigationTitle: String {
         textLength.localizedDescription
+    }
+}
+
+fileprivate func defaultTextLengthUnit() -> TextLength.LengthUnit {
+    UserDefaults.standard.bool(forKey: UserDefaultsKey.genWordsOnLaunch.string) ? .word : .paragraph
+}
+
+fileprivate func defaultTextLength() -> Int {
+    if UserDefaults.standard.bool(forKey: UserDefaultsKey.genWordsOnLaunch.string) {
+        UserDefaults.standard.integer(forKey: UserDefaultsKey.initialWordCount.string)
+    } else {
+        UserDefaults.standard.integer(forKey: UserDefaultsKey.initialParagraphCount.string)
     }
 }

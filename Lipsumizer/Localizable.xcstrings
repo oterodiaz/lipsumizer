@@ -84,19 +84,49 @@
         }
       }
     },
+    "Are you sure you want to restore the default settings?" : {
+
+    },
+    "Begin with *Lorem ipsum...*" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Choose file(s)" : {
+
+    },
     "Copy text" : {
+
+    },
+    "Custom Text" : {
 
     },
     "Decrease text length" : {
 
     },
+    "Default text length" : {
+
+    },
+    "Default text length unit" : {
+
+    },
+    "Generate from custom text" : {
+
+    },
     "Generate new text" : {
 
     },
-    "Hello, World!" : {
+    "Increase text length" : {
 
     },
-    "Increase text length" : {
+    "Paragraphs" : {
+
+    },
+    "Reset app settings" : {
+
+    },
+    "Reset settings" : {
 
     },
     "Settings" : {
@@ -109,6 +139,12 @@
 
     },
     "Toggle text length unit" : {
+
+    },
+    "Words" : {
+
+    },
+    "Yes" : {
 
     }
   },

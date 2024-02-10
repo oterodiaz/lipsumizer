@@ -13,6 +13,10 @@ struct TextGenerator: View {
     
     @State private var viewModel: TextGeneratorViewModel
     
+#if os(visionOS)
+    @State private var textSize: CGSize = .init()
+#endif
+    
     init(viewModel: TextGeneratorViewModel = TextGeneratorViewModel()) {
         self.viewModel = viewModel
     }
@@ -23,8 +27,9 @@ struct TextGenerator: View {
                 outputTextView
             }
             .navigationTitle(viewModel.navigationTitle)
-            .onAppear { viewModel.runGenerator() }
+            .onAppear { if viewModel.output.isEmpty { viewModel.runGenerator() } }
             .onChange(of: viewModel.textLength) { viewModel.runGenerator() }
+            .onChange(of: viewModel.beginWithLoremIpsum) { viewModel.runGenerator() }
             .animation(.easeIn, value: viewModel.textLength)
             .toolbar {
                 toolbarItems
@@ -36,18 +41,24 @@ struct TextGenerator: View {
         HStack {
             Spacer()
             
+#if os(macOS)
             TextEditor(text: .constant(viewModel.output))
                 .scrollContentBackground(.hidden)
-#if os(macOS)
                 .font(.system(.title2, design: .serif))
                 .scrollDisabled(true)
                 .introspect(.textEditor, on: .macOS(.v14)) { nsTextView in
                     nsTextView.isEditable = false
                 }
 #elseif os(visionOS)
+            TextEditor(text: .constant(viewModel.output))
                 .font(.system(.title2, design: .serif, weight: .semibold))
+                .scrollDisabled(true)
                 .introspect(.textEditor, on: .visionOS(.v1)) { uiTextView in
                     uiTextView.isEditable = false
+                    textSize = uiTextView.sizeThatFits(uiTextView.bounds.size)
+                }
+                .introspect(.scrollView, on: .visionOS(.v1)) {uiScrollView in
+                    uiScrollView.contentSize = textSize
                 }
 #endif
             
@@ -103,6 +114,13 @@ struct TextGenerator: View {
         }
 #endif
     }
+    
+    var textLengthCountBinding: Binding<Int> {
+        Binding(
+            get: { viewModel.textLength.count },
+            set: { viewModel.setTextLengthCount($0) }
+        )
+    }
         
     @ViewBuilder
     var textLengthControls: some View {
@@ -113,7 +131,7 @@ struct TextGenerator: View {
         }
         .help("Decrease text length")
         
-        TextField("Text length", value: $viewModel.textLength.count, format: .number)
+        TextField("Text length", value: textLengthCountBinding, format: .number)
             .multilineTextAlignment(.center)
             .help("Text length")
 #if os(visionOS)
@@ -126,6 +144,7 @@ struct TextGenerator: View {
             Label("Increase text length", systemImage: "plus")
         }
         .help("Increase text length")
+        .disabled(viewModel.textLength.reachedMaxLength)
     }
 }
 

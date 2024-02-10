@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var generatorViewModel = TextGeneratorViewModel()
+    @Environment(AppState.self) private var appState
     
 #if os(visionOS)
     @State private var currentTab: Tab = .generator
@@ -21,10 +21,10 @@ struct ContentView: View {
     
     var body: some View {
 #if os(macOS)
-        TextGenerator(viewModel: generatorViewModel)
+        TextGenerator(viewModel: appState.textGeneratorViewModel)
 #elseif os(visionOS)
         TabView(selection: $currentTab) {
-            TextGenerator(viewModel: generatorViewModel)
+            TextGenerator(viewModel: appState.textGeneratorViewModel)
                 .tag(Tab.generator)
                 .tabItem { Label("Text Generator", systemImage: "text.alignleft") }
             

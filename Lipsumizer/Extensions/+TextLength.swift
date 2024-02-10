@@ -9,6 +9,16 @@ import Foundation
 import LoremIpsumGenerator
 
 extension TextLength {
+    
+    var reachedMaxLength: Bool {
+        switch unit {
+        case .word:
+            count >= 10_000
+        case .paragraph:
+            count >= 1_000
+        }
+    }
+    
     var localizedDescription: String {
         switch unit {
         case .word:

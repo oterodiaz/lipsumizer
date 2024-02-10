@@ -9,16 +9,34 @@ import SwiftUI
 
 @main
 struct LipsumizerApp: App {
+    
+    @State private var appState: AppState
+    
+    init() {
+        UserDefaults.standard.register(
+            defaults: [
+                UserDefaultsKey.beginWithLoremIpsum.string: true,
+                UserDefaultsKey.genWordsOnLaunch.string: false,
+                UserDefaultsKey.initialParagraphCount.string: 3,
+                UserDefaultsKey.initialWordCount.string: 70
+            ]
+        )
+        
+        self.appState = AppState()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .frame(idealWidth: 512, minHeight: 256, idealHeight: 512)
+                .environment(appState)
         }
         .windowResizability(.contentSize)
         
 #if os(macOS)
         Settings {
             SettingsView()
+                .environment(appState)
         }
 #endif
     }
