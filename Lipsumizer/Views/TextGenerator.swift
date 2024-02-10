@@ -130,6 +130,7 @@ struct TextGenerator: View {
             Label("Decrease text length", systemImage: "minus")
         }
         .help("Decrease text length")
+        .buttonRepeatBehavior(.enabled)
         
         TextField("Text length", value: textLengthCountBinding, format: .number)
             .multilineTextAlignment(.center)
@@ -145,6 +146,7 @@ struct TextGenerator: View {
         }
         .help("Increase text length")
         .disabled(viewModel.textLength.reachedMaxLength)
+        .buttonRepeatBehavior(.enabled)
     }
 }
 

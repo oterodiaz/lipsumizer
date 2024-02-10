@@ -31,7 +31,11 @@ struct LipsumizerApp: App {
                 .frame(idealWidth: 512, minHeight: 256, idealHeight: 512)
                 .environment(appState)
         }
-        .windowResizability(.contentSize)
+#if os(macOS)
+        .defaultSize(width: 550, height: 500)
+#elseif os(visionOS)
+        .defaultSize(width: 750, height: 700)
+#endif
         
 #if os(macOS)
         Settings {

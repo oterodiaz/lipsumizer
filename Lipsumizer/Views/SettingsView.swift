@@ -33,14 +33,13 @@ struct SettingsView: View {
             get: { genWordsOnLaunch ? .word : .paragraph },
             set: {
                 genWordsOnLaunch = ($0 == .word)
-#if os(visionOS)
+                
                 appState.textGeneratorViewModel.textLength.unit = $0
                 if genWordsOnLaunch {
                     appState.textGeneratorViewModel.setTextLengthCount(initialWordCount)
                 } else {
                     appState.textGeneratorViewModel.setTextLengthCount(initialParagraphCount)
                 }
-#endif
             }
         )
     }
@@ -54,9 +53,8 @@ struct SettingsView: View {
                 } else {
                     initialParagraphCount = min(1_000, max(1, $0))
                 }
-#if os(visionOS)
+                
                 appState.textGeneratorViewModel.setTextLengthCount($0)
-#endif
             }
         )
     }
@@ -86,41 +84,65 @@ struct SettingsView: View {
                         TextField("Default text length", value: defaultTextLengthBinding, format: .number)
                             .textFieldStyle(.roundedBorder)
                             .multilineTextAlignment(.center)
+#if os(visionOS)
+                            .frame(width: 100)
+#endif
                             .fixedSize()
+                            .labelsHidden()
                         
                         Stepper("Default text length", value: defaultTextLengthBinding)
                             .labelsHidden()
                     }
-
-                }
                     
+                }
+                
                 Section("Custom Text") {
                     Toggle("Generate from custom text", isOn: .constant(false))
                     Button("Choose file(s)") { }
                 }
                 
-                Button("Reset settings", role: .destructive) {
-                    isShowingResetConfirmationAlert = true
-                }
+#if os(visionOS)
+                resetButton
+#endif
             }
+            .formStyle(.grouped)
             .navigationTitle("Settings")
             .alert("Reset app settings", isPresented: $isShowingResetConfirmationAlert) {
                 Button("Yes", role: .destructive) {
                     UserDefaults.standard.reset()
-#if os(visionOS)
                     generator.beginWithLoremIpsum = true
                     generator.textLength = .init(unit: genWordsOnLaunch ? .word : .paragraph, count: genWordsOnLaunch ? initialWordCount : initialParagraphCount)
-                    
-#endif
                 }
                 
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("Are you sure you want to restore the default settings?")
             }
+#if os(macOS)
+            .frame(width: 500, height: 370)
+            .overlay {
+                VStack {
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        
+                        resetButton
+                    }
+                }
+                .padding()
+            }
+#endif
+        }
+    }
+    
+    var resetButton: some View {
+        Button("Reset settings", role: .destructive) {
+            isShowingResetConfirmationAlert = true
         }
     }
 }
+
 
 #Preview {
     SettingsView()
