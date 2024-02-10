@@ -12,6 +12,8 @@ enum UserDefaultsKey: String, CaseIterable {
     case genWordsOnLaunch
     case initialParagraphCount
     case initialWordCount
+    case genFromCustomText
+    case customText
     
     var string: String {
         self.rawValue

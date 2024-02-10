@@ -93,7 +93,7 @@
     "Cancel" : {
 
     },
-    "Choose file(s)" : {
+    "Clear text" : {
 
     },
     "Copy text" : {
@@ -109,6 +109,15 @@
 
     },
     "Default text length unit" : {
+
+    },
+    "Done" : {
+
+    },
+    "Edit custom text" : {
+
+    },
+    "Edit Custom Text" : {
 
     },
     "Generate from custom text" : {
@@ -127,6 +136,9 @@
 
     },
     "Reset settings" : {
+
+    },
+    "Restore sample text" : {
 
     },
     "Settings" : {

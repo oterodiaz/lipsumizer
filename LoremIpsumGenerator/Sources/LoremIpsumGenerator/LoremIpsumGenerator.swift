@@ -9,7 +9,7 @@ import Foundation
 
 typealias Word = String
 
-public struct LoremIpsumGenerator {
+public struct LoremIpsumGenerator: Equatable, Hashable {
     
     /// Dictionary containing the list of words that appear after a word pair somewhere in the original text.
     ///
@@ -133,5 +133,14 @@ public struct LoremIpsumGenerator {
         if sentence.endsWithAnyPunctuation { sentence.removeLast() }
 
         return sentence + "."
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(wordsMarkovChain)
+        hasher.combine(isUsingCustomText)
+    }
+    
+    public static func == (lhs: LoremIpsumGenerator, rhs: LoremIpsumGenerator) -> Bool {
+        lhs.hashValue == rhs.hashValue
     }
 }

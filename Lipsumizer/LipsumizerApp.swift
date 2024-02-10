@@ -13,12 +13,17 @@ struct LipsumizerApp: App {
     @State private var appState: AppState
     
     init() {
+        let customTextURL = Bundle.main.url(forResource: "don-quixote", withExtension: "txt")!
+        let customText = try! String(contentsOf: customTextURL)
+        
         UserDefaults.standard.register(
             defaults: [
                 UserDefaultsKey.beginWithLoremIpsum.string: true,
                 UserDefaultsKey.genWordsOnLaunch.string: false,
-                UserDefaultsKey.initialParagraphCount.string: 3,
-                UserDefaultsKey.initialWordCount.string: 70
+                UserDefaultsKey.initialParagraphCount.string: 5,
+                UserDefaultsKey.initialWordCount.string: 70,
+                UserDefaultsKey.genFromCustomText.string: false,
+                UserDefaultsKey.customText.string: customText
             ]
         )
         

@@ -22,7 +22,7 @@ class TextGeneratorViewModel {
     }
     
     init(
-        generator: LoremIpsumGenerator = LoremIpsumGenerator(),
+        generator: LoremIpsumGenerator = defaultGenerator(),
         output: String = "",
         textLength: TextLength = .init(unit: defaultTextLengthUnit(), count: defaultTextLength()),
         beginWithLoremIpsum: Bool = UserDefaults.standard.bool(forKey: UserDefaultsKey.beginWithLoremIpsum.string)
@@ -57,7 +57,7 @@ class TextGeneratorViewModel {
     func toggleLengthUnit() {
         if textLength.unit == .word {
             textLength.unit = .paragraph
-            textLength.count = 3
+            textLength.count = 5
         } else {
             textLength.unit = .word
             textLength.count = 70
@@ -66,6 +66,15 @@ class TextGeneratorViewModel {
     
     var navigationTitle: String {
         textLength.localizedDescription
+    }
+}
+
+fileprivate func defaultGenerator() -> LoremIpsumGenerator {
+    if UserDefaults.standard.bool(forKey: UserDefaultsKey.genFromCustomText.string) {
+        let customText = UserDefaults.standard.string(forKey: UserDefaultsKey.customText.string) ?? ""
+        return LoremIpsumGenerator(fromCustomText: customText)
+    } else {
+        return LoremIpsumGenerator()
     }
 }
 

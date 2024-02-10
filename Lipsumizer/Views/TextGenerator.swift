@@ -12,7 +12,6 @@ import SwiftUIIntrospect
 struct TextGenerator: View {
     
     @State private var viewModel: TextGeneratorViewModel
-    
 #if os(visionOS)
     @State private var textSize: CGSize = .init()
 #endif
@@ -30,6 +29,7 @@ struct TextGenerator: View {
             .onAppear { if viewModel.output.isEmpty { viewModel.runGenerator() } }
             .onChange(of: viewModel.textLength) { viewModel.runGenerator() }
             .onChange(of: viewModel.beginWithLoremIpsum) { viewModel.runGenerator() }
+            .onChange(of: viewModel.generator.isUsingCustomText) { viewModel.runGenerator() }
             .animation(.easeIn, value: viewModel.textLength)
             .toolbar {
                 toolbarItems
