@@ -54,6 +54,7 @@
 		F13C388A2B756AC800959BC1 /* TextGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextGeneratorViewModel.swift; sourceTree = "<group>"; };
 		F13C388F2B75735500959BC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F13C38912B75735900959BC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1B1FB402B7952C300105DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F1CC50392B778ED200193826 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		F1CC503B2B77997C00193826 /* +UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UserDefaults.swift"; sourceTree = "<group>"; };
 		F1CC503D2B77C93000193826 /* don-quixote.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "don-quixote.txt"; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		F1D02A982B74F7C200D6C61D /* Lipsumizer */ = {
 			isa = PBXGroup;
 			children = (
+				F1B1FB402B7952C300105DFF /* Info.plist */,
 				F1D02A992B74F7C200D6C61D /* LipsumizerApp.swift */,
 				F135152E2B76A98C007358FC /* AppState.swift */,
 				F1CC50392B778ED200193826 /* UserDefaultsKey.swift */,
@@ -516,6 +518,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lipsumizer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Lipsumizer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -557,6 +560,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lipsumizer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Lipsumizer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
