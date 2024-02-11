@@ -85,79 +85,254 @@
       }
     },
     "Are you sure you want to restore the default settings?" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quieres restaurar la configuración original?"
+          }
+        }
+      }
     },
     "Begin with *Lorem ipsum...*" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar con *Lorem ipsum...*"
+          }
+        }
+      }
     },
     "Cancel" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
     },
     "Clear text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar"
+          }
+        }
+      }
     },
     "Copy text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar"
+          }
+        }
+      }
     },
     "Custom Text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texto personalizado"
+          }
+        }
+      }
     },
     "Decrease text length" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducir longitud"
+          }
+        }
+      }
     },
     "Default text length" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitud por defecto"
+          }
+        }
+      }
     },
     "Default text length unit" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unidad de medida por defecto"
+          }
+        }
+      }
     },
     "Done" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hecho"
+          }
+        }
+      }
     },
     "Edit custom text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar texto personalizado"
+          }
+        }
+      }
     },
     "Edit Custom Text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texto personalizado"
+          }
+        }
+      }
     },
     "Generate from custom text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizar texto base personalizado"
+          }
+        }
+      }
     },
     "Generate new text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generar nuevo texto"
+          }
+        }
+      }
     },
     "Increase text length" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aumentar longitud"
+          }
+        }
+      }
     },
     "Paragraphs" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Párrafos"
+          }
+        }
+      }
     },
     "Reset app settings" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar ajustes"
+          }
+        }
+      }
     },
     "Reset settings" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar ajustes"
+          }
+        }
+      }
     },
     "Restore sample text" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar texto de ejemplo"
+          }
+        }
+      }
     },
     "Settings" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        }
+      }
     },
     "Text Generator" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generador de texto"
+          }
+        }
+      }
     },
     "Text length" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitud del texto"
+          }
+        }
+      }
     },
     "Toggle text length unit" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar unidad de longitud"
+          }
+        }
+      }
     },
     "Words" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palabras"
+          }
+        }
+      }
     },
     "Yes" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sí"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

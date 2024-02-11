@@ -128,6 +128,7 @@ struct SettingsView: View {
         NavigationStack {
             VStack {
                 TextEditor(text: customTextBinding)
+                    .environment(\.layoutDirection, .leftToRight)
                 HStack {
                     Button("Clear text", role: .destructive) {
                         customText = ""
@@ -160,9 +161,10 @@ struct SettingsView: View {
         }
         .frame(width: 384, height: 256)
 #elseif os(visionOS)
-            NavigationStack {
+        NavigationStack {
             TextEditor(text: customTextBinding)
                 .navigationTitle("Edit Custom Text")
+                .environment(\.layoutDirection, .leftToRight)
                 .toolbar {
                     ToolbarItemGroup(placement: .primaryAction) {
                         Button(role: .destructive) {
@@ -194,8 +196,8 @@ struct SettingsView: View {
                         }
                     }
                 }
-            }
-            .frame(width: 600, height: 550)
+        }
+        .frame(width: 600, height: 550)
 #endif
     }
     

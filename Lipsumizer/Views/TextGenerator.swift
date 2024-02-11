@@ -41,18 +41,17 @@ struct TextGenerator: View {
         HStack {
             Spacer()
             
-#if os(macOS)
             TextEditor(text: .constant(viewModel.output))
                 .scrollContentBackground(.hidden)
-                .font(.system(.title2, design: .serif))
                 .scrollDisabled(true)
+                .environment(\.layoutDirection, .leftToRight)
+#if os(macOS)
+                .font(.system(.title2, design: .serif))
                 .introspect(.textEditor, on: .macOS(.v14)) { nsTextView in
                     nsTextView.isEditable = false
                 }
 #elseif os(visionOS)
-            TextEditor(text: .constant(viewModel.output))
                 .font(.system(.title2, design: .serif, weight: .semibold))
-                .scrollDisabled(true)
                 .introspect(.textEditor, on: .visionOS(.v1)) { uiTextView in
                     uiTextView.isEditable = false
                     textSize = uiTextView.sizeThatFits(uiTextView.bounds.size)
