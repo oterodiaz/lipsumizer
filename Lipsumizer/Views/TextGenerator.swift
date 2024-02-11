@@ -81,6 +81,7 @@ struct TextGenerator: View {
                 Label("Toggle text length unit", systemImage: "arrow.left.arrow.right")
             }
             .help("Toggle text length unit")
+            .keyboardShortcut(.tab, modifiers: [.command, .control])
             
             Button {
                 viewModel.runGenerator()
@@ -88,6 +89,7 @@ struct TextGenerator: View {
                 Label("Generate new text", systemImage: "arrow.clockwise")
             }
             .help("Generate new text")
+            .keyboardShortcut("r")
             
             Button {
 #if os(macOS)
@@ -102,6 +104,7 @@ struct TextGenerator: View {
                 Label("Copy text", systemImage: "doc.on.doc")
             }
             .help("Copy text")
+            .keyboardShortcut("c", modifiers: [.command, .shift])
             
 #if os(macOS)
             textLengthControls
@@ -131,6 +134,7 @@ struct TextGenerator: View {
         }
         .help("Decrease text length")
         .buttonRepeatBehavior(.enabled)
+        .keyboardShortcut("-")
         
         TextField("Text length", value: textLengthCountBinding, format: .number)
             .multilineTextAlignment(.center)
@@ -147,6 +151,7 @@ struct TextGenerator: View {
         .help("Increase text length")
         .disabled(viewModel.textLength.reachedMaxLength)
         .buttonRepeatBehavior(.enabled)
+        .keyboardShortcut("+")
     }
 }
 
