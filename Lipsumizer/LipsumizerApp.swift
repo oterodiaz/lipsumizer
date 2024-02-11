@@ -35,6 +35,15 @@ struct LipsumizerApp: App {
             ContentView()
                 .frame(idealWidth: 512, minHeight: 256, idealHeight: 512)
                 .environment(appState)
+#if os(macOS)
+                .onAppear {
+                    NSWindow.allowsAutomaticWindowTabbing = false
+                }
+#endif
+
+        }
+        .commands {
+            CommandGroup(replacing: .newItem) { }
         }
 #if os(macOS)
         .defaultSize(width: 550, height: 500)
