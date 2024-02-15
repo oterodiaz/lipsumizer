@@ -132,6 +132,7 @@ struct TextGenerator: View {
             Label("Decrease text length", systemImage: "minus")
         }
         .help("Decrease text length")
+        .disabled(viewModel.textLength.count <= 1)
         .buttonRepeatBehavior(.enabled)
         .keyboardShortcut("-")
         
