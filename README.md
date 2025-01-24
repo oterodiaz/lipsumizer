@@ -1,6 +1,6 @@
 # Lipsumizer
 
-[![Lipsumizer for visionOS](https://oterodiaz.com/media/app-store-badge-black.svg)](https://apps.apple.com/app/lipsumizer/id6477761381)
+[![Lipsumizer for visionOS](https://old.oterodiaz.com/media/app-store-badge-black.svg)](https://apps.apple.com/app/lipsumizer/id6477761381)
 
 Lipsumizer is a random placeholder text generator for prototyping.
 
